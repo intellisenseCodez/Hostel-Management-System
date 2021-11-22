@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-l=^#(t)&r5j8*!li&8s4x9^y)lrh^w1)095p&%wnd-579e*02x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['erp-hostel-management.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['erp-hostel-management.herokuapp.com','127.0.0.1',]
 
 
 # Application definition
@@ -135,7 +135,7 @@ STATICFILES_DIRS = [
 ]
 
 # Configure Django App for Heroku.
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
